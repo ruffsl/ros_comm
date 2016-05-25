@@ -1,0 +1,4 @@
+[submodule "utilities/libiqxmlrpc"]
+	path = utilities/libiqxmlrpc
+	url = https://github.com/ruffsl/libiqxmlrpc
+	branch = master
