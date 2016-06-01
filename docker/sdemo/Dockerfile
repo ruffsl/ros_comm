@@ -17,11 +17,6 @@ RUN apt-get update && apt-get install --no-install-recommends -y \
     python-vcstools \
     && rm -rf /var/lib/apt/lists/*
 
-# tempfix for https://github.com/ros-infrastructure/rosdep/pull/454
-RUN apt-get update && apt-get install --no-install-recommends -y \
-    ca-certificates \
-    && rm -rf /var/lib/apt/lists/*
-
 # bootstrap rosdep
 RUN rosdep init \
     && rosdep update
