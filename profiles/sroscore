@@ -1,0 +1,40 @@
+# Last Modified: Mon Jun  6 18:23:25 2016
+#include <tunables/global>
+
+/home/ruffsl/sros/install/bin/sroscore {
+  #include <abstractions/apache2-common>
+  #include <abstractions/base>
+  #include <abstractions/python>
+
+  /bin/dash rix,
+  /bin/netstat rix,
+  /bin/uname rix,
+  /home/*/.ros/ rw,
+  /home/*/.ros/** rw,
+  /home/*/.ros/roscore-11311.pid w,
+  /home/*/sros/GhzBqV w,
+  /home/*/sros/install/.catkin r,
+  /home/*/sros/install/etc/ros/roscore.xml r,
+  /home/*/sros/install/lib/python2.7/dist-packages/** r,
+  /home/*/sros/install/share/ r,
+  /home/*/sros/install/share/** r,
+  /home/*/sros/ydiYyn w,
+  /home/ruffsl/sros/devel/.private/rosmaster/bin/rosmaster rix,
+  /home/ruffsl/sros/install/bin/rosmaster rix,
+  /home/ruffsl/sros/install/bin/sroscore r,
+  /home/ruffsl/sros/install/share/rosoutpy/scripts/rosoutpy rix,
+  /proc/*/mounts r,
+  /proc/*/status r,
+  /sbin/ifconfig rix,
+  /sbin/ldconfig rix,
+  /sbin/ldconfig.real rix,
+  /tmp/** rw,
+  /usr/bin/du rix,
+  /usr/bin/env ix,
+  /usr/bin/gcc-5 rix,
+  /usr/bin/python2.7 ix,
+  /usr/bin/rosversion rix,
+  /usr/sbin/arp rix,
+  /var/tmp/** rw,
+
+}
