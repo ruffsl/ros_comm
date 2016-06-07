@@ -8,8 +8,10 @@
 #
 # ------------------------------------------------------------------
 
-# Include python abstractions and excutables needed for ros with python
-#include <abstractions/python>
+# Include basic node abstractions and excutables needed for ros nodes
 
-/usr/bin/python{2,2.[4-7],3,3.[0-5]} rix,
-/usr/bin/python{2,2.[4-7],3,3.[0-5]} rix,
+/bin/dash rix,
+/bin/uname rix,
+@{ROS_INSTALL_PYTHON}/dist-packages{,/}** r,
+@{ROS_INSTALL_SHARE}{,/}** r,
+owner @{ROS_LOCAL}{,/}** rw,

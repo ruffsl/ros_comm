@@ -1,0 +1,12 @@
+# Last Modified: Tue Jun  7 14:14:12 2016
+#include <ros/global>
+#include <tunables/global>
+
+/home/ruffsl/sros/src/codebot/ros_tutorials/rospy_tutorials/001_talker_listener/listener.py {
+  #include <ros/base>
+  #include <ros/node>
+  #include <ros/python>
+
+  /home/*/sros/src/codebot/ros_tutorials/rospy_tutorials/001_talker_listener/listener.py r,
+
+}
