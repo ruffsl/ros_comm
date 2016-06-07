@@ -1,0 +1,16 @@
+# Last Modified: Tue Jun  7 10:44:23 2016
+#include <tunables/global>
+#include <ros/global>
+
+/home/ruffsl/sros/install/bin/rosmaster {
+  #include <ros/base>
+  #include <ros/python>
+
+  /bin/dash rix,
+  /bin/uname rix,
+  owner @{ROS_LOCAL}{,/}** rw,
+  @{ROS_INSTALL_BIN}/rosmaster rix,
+  @{ROS_INSTALL_PYTHON}/dist-packages{,/}** r,
+  @{ROS_INSTALL_SHARE}{,/}** r,
+
+}
