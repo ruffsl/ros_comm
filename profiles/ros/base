@@ -9,5 +9,17 @@
 # ------------------------------------------------------------------
 
 # Include base and networking abstractions needed for ros
-#include <abstractions/apache2-common>
 #include <abstractions/base>
+#include <abstractions/nameservice>
+
+# Include basic permissions for ROS and every vHost
+# Allow unconfined processes to send us signals by default
+#signal (receive) peer=unconfined,
+# Allow apache to send us signals by default
+#signal (receive) peer=/usr/sbin/apache2,
+# Allow us to signal ourselves
+#signal peer=@{profile_name},
+
+# Network permissions
+#network inet stream,
+#network inet6 stream,
